@@ -1,5 +1,7 @@
 #include "testApp.h"
-ofImage myImage;
+ofImage myImage1;
+ofImage myImage2;
+
 float volume;
 float * inputBufferCopy;
 
@@ -9,9 +11,9 @@ void testApp::setup(){
 
 	ofRegisterTouchEvents(this);
 	
-    myImage.loadImage("Compact-Fluorescent-Bulb.png");
+    myImage1.loadImage("Compact-Fluorescent-Bulb.png");
+    myImage2.loadImage("Compact-Fluorescent-Bulb layered.png");
     
-	
 	ofxiPhoneSetOrientation(OFXIPHONE_ORIENTATION_PORTRAIT);
     
 	ofBackground(255,255,255);
@@ -44,11 +46,19 @@ void testApp::draw(){
     ofBackground(0, 0, 0);
     ofEnableAlphaBlending();
     
-   // NSLog(@"volume is %f", volume*100);
+  // NSLog(@"volume is %f", volume*100);
     
-    
+      
     ofSetColor(255, 255, 255, volume*1000);
-    myImage.draw(0,0);
+    myImage1.draw(0,0);
+    
+    if(volume*100 > 15)
+    {
+        NSLog(@"here");
+        ofSetColor(255, 255, 255, 255);
+        myImage2.draw(0,0);
+    }
+
 
 }
 
