@@ -1,9 +1,22 @@
 #include "testApp.h"
 ofImage myImage1;
 ofImage myImage2;
+ofImage myImage3;
+ofImage myImage4;
+ofImage myImage5;
+ofImage myImage6;
+
+ofImage myImage7;
+ofImage myImage8;
 
 float volume;
 float * inputBufferCopy;
+
+float frameRateForCapture;  
+float lastTime;  
+float timerDuration;
+
+int stepper;
 
 
 //--------------------------------------------------------------
@@ -11,8 +24,46 @@ void testApp::setup(){
 
 	ofRegisterTouchEvents(this);
 	
-    myImage1.loadImage("Compact-Fluorescent-Bulb.png");
-    myImage2.loadImage("Compact-Fluorescent-Bulb layered.png");
+    myImage1.loadImage("Compact-Fluorescent-Bulb layered1.png");
+    myImage2.loadImage("Compact-Fluorescent-Bulb layered2.png");
+    
+    myImage3.loadImage("Iphone-battery-layered1.png");
+    myImage4.loadImage("Iphone-battery-layered2.png");
+    
+    myImage5.loadImage("LED-spotlight-layered1.png");
+    myImage6.loadImage("LED-spotlight-layered2.png");
+    
+    myImage7.loadImage("Old-Incandescend-bulb-layered1.png");
+    myImage8.loadImage("Old-Incandescend-bulb-layered2.png");
+    
+    lastTime = ofGetElapsedTimef();  
+    frameRateForCapture = 60; // 30 fps 
+    timerDuration = 10.0;  
+
+    
+    stepper = 0;
+    
+    
+    allImages = new ofImage[8];
+    allImages[0] = myImage1;
+    allImages[1] = myImage2;
+    allImages[2] = myImage3;
+    allImages[3] = myImage4;
+    allImages[4] = myImage5;
+    allImages[5] = myImage6;
+    allImages[6] = myImage7;
+    allImages[7] = myImage8;
+    
+    images = new ofImage[2];
+
+    images[0] =  allImages[stepper];
+    stepper++;
+    images[1] =  allImages[stepper];
+    stepper++;
+    
+    
+
+    
     
 	ofxiPhoneSetOrientation(OFXIPHONE_ORIENTATION_PORTRAIT);
     
@@ -36,7 +87,28 @@ void testApp::setup(){
 }
 
 //--------------------------------------------------------------
-void testApp::update(){
+void testApp::update()
+{
+    
+    float currentTime = ofGetElapsedTimef();  
+    if (currentTime - lastTime > timerDuration){  
+        // DO SOMETHING HERE  
+        NSLog(@"10 seconds now");
+        NSLog(@"stepper is %i", stepper);
+        
+        images[0] =  allImages[stepper];
+        stepper++;
+         NSLog(@"stepper is %i", stepper);
+        images[1] =  allImages[stepper];
+        stepper++;
+         NSLog(@"stepper is %i", stepper);
+        
+        if(stepper == 8)
+        {
+            stepper = 0;
+        }
+        lastTime = currentTime;  
+    }  
 
 }
 
@@ -50,13 +122,13 @@ void testApp::draw(){
     
       
     ofSetColor(255, 255, 255, volume*1000);
-    myImage1.draw(0,0);
+    images[0].draw(0,0);
     
     if(volume*100 > 15)
     {
-        NSLog(@"here");
+        //NSLog(@"here");
         ofSetColor(255, 255, 255, 255);
-        myImage2.draw(0,0);
+       images[1].draw(0,0);
     }
 
 

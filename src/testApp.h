@@ -23,6 +23,8 @@ public:
 	int		sampleRate;
 	int		drawCounter, bufferCounter;
 	float 	* buffer;
-	
+	ofImage * images;
+    ofImage * allImages;
+    
 };
 
