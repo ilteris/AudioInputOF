@@ -5,9 +5,15 @@ ofImage myImage3;
 ofImage myImage4;
 ofImage myImage5;
 ofImage myImage6;
-
 ofImage myImage7;
 ofImage myImage8;
+ofImage myImage9;
+ofImage myImage10;
+ofImage myImage11;
+ofImage myImage12;
+ofImage myImage13;
+ofImage myImage14;
+
 
 float volume;
 float * inputBufferCopy;
@@ -18,6 +24,8 @@ float timerDuration;
 
 int stepper;
 
+int noOfElements;
+
 
 int brightnessMultiplier;
 
@@ -26,27 +34,41 @@ int brightnessMultiplier;
 void testApp::setup(){
 
 	ofRegisterTouchEvents(this);
+    
+    
+    
+    myImage1.loadImage("Earth-night-layered0.png");
+    myImage2.loadImage("Earth-night-layered1.png");
 	
-    myImage1.loadImage("Compact-Fluorescent-Bulb layered1.png");
-    myImage2.loadImage("Compact-Fluorescent-Bulb layered2.png");
+    myImage3.loadImage("Compact-Fluorescent-Bulb layered1.png");
+    myImage4.loadImage("Compact-Fluorescent-Bulb layered2.png");
     
-    myImage3.loadImage("Iphone-battery-layered1.png");
-    myImage4.loadImage("Iphone-battery-layered2.png");
+    myImage5.loadImage("Iphone-battery-layered1.png");
+    myImage6.loadImage("Iphone-battery-layered2.png");
     
-    myImage5.loadImage("LED-spotlight-layered1.png");
-    myImage6.loadImage("LED-spotlight-layered2.png");
+    myImage7.loadImage("LED-spotlight-layered1.png");
+    myImage8.loadImage("LED-spotlight-layered2.png");
     
-    myImage7.loadImage("Old-Incandescend-bulb-layered1.png");
-    myImage8.loadImage("Old-Incandescend-bulb-layered2.png");
+    myImage9.loadImage("Old-Incandescend-bulb-layered1.png");
+    myImage10.loadImage("Old-Incandescend-bulb-layered2.png");
+    
+    myImage11.loadImage("Cat-eye-layered0.png");
+    myImage12.loadImage("Cat-eye-layered1.png");
+    
+    myImage13.loadImage("Solar-eclipse-layered0.png");
+    myImage14.loadImage("Solar-eclipse-layered1.png");
+    
+    
     
     lastTime = ofGetElapsedTimef();  
     frameRateForCapture = 60; // 30 fps 
     timerDuration = 10.0;  
-
+    noOfElements = 7;
+    
     [[UIApplication sharedApplication] setIdleTimerDisabled:YES];  
     
     
-    stepper = 2 * (arc4random_uniform (4) );  //stepper can be either 0, 2, 4, 6
+    stepper = 2 * (arc4random_uniform (noOfElements) );  //stepper can be either 0, 2, 4, 6
     //a = (2 * rand ()) %6;  //random numbers from set of 2, 4, 6, 8, 10
     
      NSLog(@"stepper is %i", stepper);
@@ -55,7 +77,7 @@ void testApp::setup(){
     brightnessMultiplier = 1500;
     
     
-    allImages = new ofImage[8];
+    allImages = new ofImage[14];
     allImages[0] = myImage1;
     allImages[1] = myImage2;
     allImages[2] = myImage3;
@@ -64,6 +86,15 @@ void testApp::setup(){
     allImages[5] = myImage6;
     allImages[6] = myImage7;
     allImages[7] = myImage8;
+    allImages[8] = myImage9;
+    allImages[9] = myImage10;
+    allImages[10] = myImage11;
+    allImages[11] = myImage12;
+    allImages[12] = myImage13;
+    allImages[13] = myImage14;
+    
+    
+    
     
     images = new ofImage[2];
 
@@ -107,7 +138,7 @@ void testApp::update()
         NSLog(@"10 seconds now");
         NSLog(@"stepper is %i", stepper);
         
-        stepper = 2 * (arc4random_uniform (4) ); //stepper can be either 0, 2, 4, 6
+        stepper = 2 * (arc4random_uniform (noOfElements) ); //stepper can be either 0, 2, 4, 6
         NSLog(@"stepper is %i", stepper);
 
         images[0] =  allImages[stepper];

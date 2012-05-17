@@ -40,6 +40,12 @@
 		F0DDCF981565550F000C53F0 /* Old-Incandescend-bulb-layered1.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DDCF8C1565550F000C53F0 /* Old-Incandescend-bulb-layered1.png */; };
 		F0DDCF991565550F000C53F0 /* Old-Incandescend-bulb-layered2.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DDCF8D1565550F000C53F0 /* Old-Incandescend-bulb-layered2.png */; };
 		F0DDCF9B15656516000C53F0 /* Compact-Fluorescent-Bulb layered1.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DDCF9A15656516000C53F0 /* Compact-Fluorescent-Bulb layered1.png */; };
+		F0DDCFA215659522000C53F0 /* Solar-eclipse-layered0.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DDCFA015659522000C53F0 /* Solar-eclipse-layered0.png */; };
+		F0DDCFA315659522000C53F0 /* Solar-eclipse-layered1.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DDCFA115659522000C53F0 /* Solar-eclipse-layered1.png */; };
+		F0DDCFAA1565AA31000C53F0 /* Earth-night-layered0.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DDCFA81565AA31000C53F0 /* Earth-night-layered0.png */; };
+		F0DDCFAB1565AA31000C53F0 /* Earth-night-layered1.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DDCFA91565AA31000C53F0 /* Earth-night-layered1.png */; };
+		F0DDCFAE1565AAC1000C53F0 /* Cat-eye-layered0.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DDCFAC1565AAC1000C53F0 /* Cat-eye-layered0.png */; };
+		F0DDCFAF1565AAC1000C53F0 /* Cat-eye-layered1.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DDCFAD1565AAC1000C53F0 /* Cat-eye-layered1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +102,12 @@
 		F0DDCF8C1565550F000C53F0 /* Old-Incandescend-bulb-layered1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Old-Incandescend-bulb-layered1.png"; sourceTree = "<group>"; };
 		F0DDCF8D1565550F000C53F0 /* Old-Incandescend-bulb-layered2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Old-Incandescend-bulb-layered2.png"; sourceTree = "<group>"; };
 		F0DDCF9A15656516000C53F0 /* Compact-Fluorescent-Bulb layered1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Compact-Fluorescent-Bulb layered1.png"; sourceTree = "<group>"; };
+		F0DDCFA015659522000C53F0 /* Solar-eclipse-layered0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Solar-eclipse-layered0.png"; sourceTree = "<group>"; };
+		F0DDCFA115659522000C53F0 /* Solar-eclipse-layered1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Solar-eclipse-layered1.png"; sourceTree = "<group>"; };
+		F0DDCFA81565AA31000C53F0 /* Earth-night-layered0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Earth-night-layered0.png"; sourceTree = "<group>"; };
+		F0DDCFA91565AA31000C53F0 /* Earth-night-layered1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Earth-night-layered1.png"; sourceTree = "<group>"; };
+		F0DDCFAC1565AAC1000C53F0 /* Cat-eye-layered0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cat-eye-layered0.png"; sourceTree = "<group>"; };
+		F0DDCFAD1565AAC1000C53F0 /* Cat-eye-layered1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cat-eye-layered1.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +194,12 @@
 		BB24DD8B10DA77E000E9C588 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				F0DDCFAC1565AAC1000C53F0 /* Cat-eye-layered0.png */,
+				F0DDCFAD1565AAC1000C53F0 /* Cat-eye-layered1.png */,
+				F0DDCFA81565AA31000C53F0 /* Earth-night-layered0.png */,
+				F0DDCFA91565AA31000C53F0 /* Earth-night-layered1.png */,
+				F0DDCFA015659522000C53F0 /* Solar-eclipse-layered0.png */,
+				F0DDCFA115659522000C53F0 /* Solar-eclipse-layered1.png */,
 				F0DDCF9A15656516000C53F0 /* Compact-Fluorescent-Bulb layered1.png */,
 				F0DDCF821565550F000C53F0 /* Compact-Fluorescent-Bulb layered0.png */,
 				F0DDCF841565550F000C53F0 /* Compact-Fluorescent-Bulb layered2.png */,
@@ -323,6 +341,12 @@
 				F0DDCF981565550F000C53F0 /* Old-Incandescend-bulb-layered1.png in Resources */,
 				F0DDCF991565550F000C53F0 /* Old-Incandescend-bulb-layered2.png in Resources */,
 				F0DDCF9B15656516000C53F0 /* Compact-Fluorescent-Bulb layered1.png in Resources */,
+				F0DDCFA215659522000C53F0 /* Solar-eclipse-layered0.png in Resources */,
+				F0DDCFA315659522000C53F0 /* Solar-eclipse-layered1.png in Resources */,
+				F0DDCFAA1565AA31000C53F0 /* Earth-night-layered0.png in Resources */,
+				F0DDCFAB1565AA31000C53F0 /* Earth-night-layered1.png in Resources */,
+				F0DDCFAE1565AAC1000C53F0 /* Cat-eye-layered0.png in Resources */,
+				F0DDCFAF1565AAC1000C53F0 /* Cat-eye-layered1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
