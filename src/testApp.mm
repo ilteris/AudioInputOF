@@ -19,6 +19,9 @@ float timerDuration;
 int stepper;
 
 
+int brightnessMultiplier;
+
+
 //--------------------------------------------------------------
 void testApp::setup(){
 
@@ -40,8 +43,16 @@ void testApp::setup(){
     frameRateForCapture = 60; // 30 fps 
     timerDuration = 10.0;  
 
+    [[UIApplication sharedApplication] setIdleTimerDisabled:YES];  
     
-    stepper = 0;
+    
+    stepper = 2 * (arc4random_uniform (4) );  //stepper can be either 0, 2, 4, 6
+    //a = (2 * rand ()) %6;  //random numbers from set of 2, 4, 6, 8, 10
+    
+     NSLog(@"stepper is %i", stepper);
+    
+    
+    brightnessMultiplier = 1500;
     
     
     allImages = new ofImage[8];
@@ -59,8 +70,8 @@ void testApp::setup(){
     images[0] =  allImages[stepper];
     stepper++;
     images[1] =  allImages[stepper];
-    stepper++;
     
+     NSLog(@"stepper is %i", stepper);
     
 
     
@@ -96,17 +107,14 @@ void testApp::update()
         NSLog(@"10 seconds now");
         NSLog(@"stepper is %i", stepper);
         
+        stepper = 2 * (arc4random_uniform (4) ); //stepper can be either 0, 2, 4, 6
+        NSLog(@"stepper is %i", stepper);
+
         images[0] =  allImages[stepper];
         stepper++;
          NSLog(@"stepper is %i", stepper);
         images[1] =  allImages[stepper];
-        stepper++;
-         NSLog(@"stepper is %i", stepper);
-        
-        if(stepper == 8)
-        {
-            stepper = 0;
-        }
+      
         lastTime = currentTime;  
     }  
 
@@ -121,7 +129,7 @@ void testApp::draw(){
   // NSLog(@"volume is %f", volume*100);
     
       
-    ofSetColor(255, 255, 255, volume*1000);
+    ofSetColor(255, 255, 255, volume*brightnessMultiplier);
     images[0].draw(0,0);
     
     if(volume*100 > 15)
@@ -130,8 +138,6 @@ void testApp::draw(){
         ofSetColor(255, 255, 255, 255);
        images[1].draw(0,0);
     }
-
-
 }
 
 

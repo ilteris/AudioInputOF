@@ -29,7 +29,6 @@
 		E4D8936E11527B74007E1F53 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4D8936B11527B74007E1F53 /* main.mm */; };
 		E4D8936F11527B74007E1F53 /* testApp.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4D8936D11527B74007E1F53 /* testApp.mm */; };
 		F0DDCF8E1565550F000C53F0 /* Compact-Fluorescent-Bulb layered0.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DDCF821565550F000C53F0 /* Compact-Fluorescent-Bulb layered0.png */; };
-		F0DDCF8F1565550F000C53F0 /* Compact-Fluorescent-Bulb layered1.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DDCF831565550F000C53F0 /* Compact-Fluorescent-Bulb layered1.png */; };
 		F0DDCF901565550F000C53F0 /* Compact-Fluorescent-Bulb layered2.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DDCF841565550F000C53F0 /* Compact-Fluorescent-Bulb layered2.png */; };
 		F0DDCF911565550F000C53F0 /* Iphone-battery-layered0.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DDCF851565550F000C53F0 /* Iphone-battery-layered0.png */; };
 		F0DDCF921565550F000C53F0 /* Iphone-battery-layered1.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DDCF861565550F000C53F0 /* Iphone-battery-layered1.png */; };
@@ -40,6 +39,7 @@
 		F0DDCF971565550F000C53F0 /* Old-Incandescend-bulb-layered0.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DDCF8B1565550F000C53F0 /* Old-Incandescend-bulb-layered0.png */; };
 		F0DDCF981565550F000C53F0 /* Old-Incandescend-bulb-layered1.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DDCF8C1565550F000C53F0 /* Old-Incandescend-bulb-layered1.png */; };
 		F0DDCF991565550F000C53F0 /* Old-Incandescend-bulb-layered2.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DDCF8D1565550F000C53F0 /* Old-Incandescend-bulb-layered2.png */; };
+		F0DDCF9B15656516000C53F0 /* Compact-Fluorescent-Bulb layered1.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DDCF9A15656516000C53F0 /* Compact-Fluorescent-Bulb layered1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,7 +85,6 @@
 		E4D8936C11527B74007E1F53 /* testApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = testApp.h; path = src/testApp.h; sourceTree = SOURCE_ROOT; };
 		E4D8936D11527B74007E1F53 /* testApp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = testApp.mm; path = src/testApp.mm; sourceTree = SOURCE_ROOT; };
 		F0DDCF821565550F000C53F0 /* Compact-Fluorescent-Bulb layered0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Compact-Fluorescent-Bulb layered0.png"; sourceTree = "<group>"; };
-		F0DDCF831565550F000C53F0 /* Compact-Fluorescent-Bulb layered1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Compact-Fluorescent-Bulb layered1.png"; sourceTree = "<group>"; };
 		F0DDCF841565550F000C53F0 /* Compact-Fluorescent-Bulb layered2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Compact-Fluorescent-Bulb layered2.png"; sourceTree = "<group>"; };
 		F0DDCF851565550F000C53F0 /* Iphone-battery-layered0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Iphone-battery-layered0.png"; sourceTree = "<group>"; };
 		F0DDCF861565550F000C53F0 /* Iphone-battery-layered1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Iphone-battery-layered1.png"; sourceTree = "<group>"; };
@@ -96,6 +95,7 @@
 		F0DDCF8B1565550F000C53F0 /* Old-Incandescend-bulb-layered0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Old-Incandescend-bulb-layered0.png"; sourceTree = "<group>"; };
 		F0DDCF8C1565550F000C53F0 /* Old-Incandescend-bulb-layered1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Old-Incandescend-bulb-layered1.png"; sourceTree = "<group>"; };
 		F0DDCF8D1565550F000C53F0 /* Old-Incandescend-bulb-layered2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Old-Incandescend-bulb-layered2.png"; sourceTree = "<group>"; };
+		F0DDCF9A15656516000C53F0 /* Compact-Fluorescent-Bulb layered1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Compact-Fluorescent-Bulb layered1.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,8 +182,8 @@
 		BB24DD8B10DA77E000E9C588 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				F0DDCF9A15656516000C53F0 /* Compact-Fluorescent-Bulb layered1.png */,
 				F0DDCF821565550F000C53F0 /* Compact-Fluorescent-Bulb layered0.png */,
-				F0DDCF831565550F000C53F0 /* Compact-Fluorescent-Bulb layered1.png */,
 				F0DDCF841565550F000C53F0 /* Compact-Fluorescent-Bulb layered2.png */,
 				F0DDCF851565550F000C53F0 /* Iphone-battery-layered0.png */,
 				F0DDCF861565550F000C53F0 /* Iphone-battery-layered1.png */,
@@ -312,7 +312,6 @@
 				E41D3ED713B38FB500A75A5D /* Project.xcconfig in Resources */,
 				E41D3EE613B3906D00A75A5D /* CoreOF.xcconfig in Resources */,
 				F0DDCF8E1565550F000C53F0 /* Compact-Fluorescent-Bulb layered0.png in Resources */,
-				F0DDCF8F1565550F000C53F0 /* Compact-Fluorescent-Bulb layered1.png in Resources */,
 				F0DDCF901565550F000C53F0 /* Compact-Fluorescent-Bulb layered2.png in Resources */,
 				F0DDCF911565550F000C53F0 /* Iphone-battery-layered0.png in Resources */,
 				F0DDCF921565550F000C53F0 /* Iphone-battery-layered1.png in Resources */,
@@ -323,6 +322,7 @@
 				F0DDCF971565550F000C53F0 /* Old-Incandescend-bulb-layered0.png in Resources */,
 				F0DDCF981565550F000C53F0 /* Old-Incandescend-bulb-layered1.png in Resources */,
 				F0DDCF991565550F000C53F0 /* Old-Incandescend-bulb-layered2.png in Resources */,
+				F0DDCF9B15656516000C53F0 /* Compact-Fluorescent-Bulb layered1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
