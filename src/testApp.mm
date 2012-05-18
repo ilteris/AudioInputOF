@@ -36,18 +36,19 @@ void testApp::setup(){
 	ofRegisterTouchEvents(this);
     
     
-    
-    myImage1.loadImage("Earth-night-layered0.png");
-    myImage2.loadImage("Earth-night-layered1.png");
 	
-    myImage3.loadImage("Compact-Fluorescent-Bulb layered1.png");
-    myImage4.loadImage("Compact-Fluorescent-Bulb layered2.png");
+    myImage1.loadImage("Compact-Fluorescent-Bulb layered1.png");
+    myImage2.loadImage("Compact-Fluorescent-Bulb layered2.png");
     
-    myImage5.loadImage("Iphone-battery-layered1.png");
-    myImage6.loadImage("Iphone-battery-layered2.png");
+    myImage3.loadImage("M-neon-layered0.png");
+    myImage4.loadImage("M-neon-layered1.png");
     
-    myImage7.loadImage("LED-spotlight-layered1.png");
-    myImage8.loadImage("LED-spotlight-layered2.png");
+    myImage5.loadImage("LED-spotlight-layered1.png");
+    myImage6.loadImage("LED-spotlight-layered2.png");
+    
+    myImage7.loadImage("Solar-eclipse-layered0.png");
+    myImage8.loadImage("Solar-eclipse-layered1.png");
+    
     
     myImage9.loadImage("Old-Incandescend-bulb-layered1.png");
     myImage10.loadImage("Old-Incandescend-bulb-layered2.png");
@@ -55,9 +56,8 @@ void testApp::setup(){
     myImage11.loadImage("Cat-eye-layered0.png");
     myImage12.loadImage("Cat-eye-layered1.png");
     
-    myImage13.loadImage("Solar-eclipse-layered0.png");
-    myImage14.loadImage("Solar-eclipse-layered1.png");
-    
+    myImage13.loadImage("Earth-night-layered0.png");
+    myImage14.loadImage("Earth-night-layered1.png");
     
     
     lastTime = ofGetElapsedTimef();  
@@ -74,7 +74,7 @@ void testApp::setup(){
      NSLog(@"stepper is %i", stepper);
     
     
-    brightnessMultiplier = 1500;
+    brightnessMultiplier = 1200;
     
     
     allImages = new ofImage[14];

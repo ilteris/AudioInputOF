@@ -46,6 +46,8 @@
 		F0DDCFAB1565AA31000C53F0 /* Earth-night-layered1.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DDCFA91565AA31000C53F0 /* Earth-night-layered1.png */; };
 		F0DDCFAE1565AAC1000C53F0 /* Cat-eye-layered0.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DDCFAC1565AAC1000C53F0 /* Cat-eye-layered0.png */; };
 		F0DDCFAF1565AAC1000C53F0 /* Cat-eye-layered1.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DDCFAD1565AAC1000C53F0 /* Cat-eye-layered1.png */; };
+		F0DDCFB21566827C000C53F0 /* M-neon-layered0.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DDCFB01566827C000C53F0 /* M-neon-layered0.png */; };
+		F0DDCFB31566827C000C53F0 /* M-neon-layered1.png in Resources */ = {isa = PBXBuildFile; fileRef = F0DDCFB11566827C000C53F0 /* M-neon-layered1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +110,8 @@
 		F0DDCFA91565AA31000C53F0 /* Earth-night-layered1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Earth-night-layered1.png"; sourceTree = "<group>"; };
 		F0DDCFAC1565AAC1000C53F0 /* Cat-eye-layered0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cat-eye-layered0.png"; sourceTree = "<group>"; };
 		F0DDCFAD1565AAC1000C53F0 /* Cat-eye-layered1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cat-eye-layered1.png"; sourceTree = "<group>"; };
+		F0DDCFB01566827C000C53F0 /* M-neon-layered0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "M-neon-layered0.png"; sourceTree = "<group>"; };
+		F0DDCFB11566827C000C53F0 /* M-neon-layered1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "M-neon-layered1.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +198,8 @@
 		BB24DD8B10DA77E000E9C588 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				F0DDCFB01566827C000C53F0 /* M-neon-layered0.png */,
+				F0DDCFB11566827C000C53F0 /* M-neon-layered1.png */,
 				F0DDCFAC1565AAC1000C53F0 /* Cat-eye-layered0.png */,
 				F0DDCFAD1565AAC1000C53F0 /* Cat-eye-layered1.png */,
 				F0DDCFA81565AA31000C53F0 /* Earth-night-layered0.png */,
@@ -347,6 +353,8 @@
 				F0DDCFAB1565AA31000C53F0 /* Earth-night-layered1.png in Resources */,
 				F0DDCFAE1565AAC1000C53F0 /* Cat-eye-layered0.png in Resources */,
 				F0DDCFAF1565AAC1000C53F0 /* Cat-eye-layered1.png in Resources */,
+				F0DDCFB21566827C000C53F0 /* M-neon-layered0.png in Resources */,
+				F0DDCFB31566827C000C53F0 /* M-neon-layered1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
